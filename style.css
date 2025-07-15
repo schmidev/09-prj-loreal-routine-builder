@@ -368,3 +368,82 @@ body {
   color: #221e1f;
   align-self: flex-start;
 }
+
+/* Responsive design for tablets and phones */
+@media (max-width: 900px) {
+  .page-wrapper {
+    width: 98%;
+    max-width: 100%;
+    padding: 0 8px;
+  }
+  .products-grid {
+    gap: 12px;
+  }
+  .product-card {
+    flex: 0 1 calc(50% - 10px);
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    padding-top: 24px;
+    padding-bottom: 6px;
+  }
+  .logo {
+    width: 160px;
+  }
+  .site-title {
+    font-size: 16px;
+  }
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-section select,
+  .search-section input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .products-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .product-card {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 10px;
+    gap: 8px;
+  }
+  .product-card img {
+    width: 70px;
+    height: 70px;
+  }
+  .product-card h3 {
+    font-size: 14px;
+  }
+  .product-card p {
+    font-size: 12px;
+  }
+  .selected-product-item {
+    font-size: 13px;
+    padding: 4px 6px 4px 4px;
+    gap: 4px;
+  }
+  .selected-product-item img {
+    width: 28px;
+    height: 28px;
+  }
+  .chatbox {
+    padding: 12px;
+  }
+  .chat-window {
+    padding: 10px;
+    font-size: 15px;
+    height: 180px;
+  }
+  .generate-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
